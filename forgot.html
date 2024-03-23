@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Author Signup</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      background-image:url("./login2.jpg");
+      background-size:cover;
+      background-position:top;
+    }
+    .container {
+      width: 400px;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="date"] {
+      width: calc(100% - 22px);
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      border: none;
+      border-radius: 3px;
+      color: #fff;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+    label {
+      font-weight: bold;
+    }
+    .required::after {
+      content: "*";
+      color: rgb(141, 15, 15);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Create a new account</h2>
+    <form action="your_signup_script.php" method="post">
+      <label for="username" class="required">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Username or E-mail or Phone Number" required>
+      <label for="firstName" class="required">First Name:</label>
+      <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+      <label for="lastName" class="required">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+      <label for="dob" class="required">Date of Birth:</label>
+      <input type="date" id="dob" name="dob"  required>
+      <label for="password" class="required">Create Password:</label>
+      <input type="password" id="password" name="password" placeholder="Password" required>
+      <input type="submit" value="Signup">
+    </form>
+  </div>
+</body>
+</html>

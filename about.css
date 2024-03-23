@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav{
+    background-color: rgb(44, 5, 5);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    
+}
+
+#one{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.two{
+    background-image: url('./thought-catalog-505eectW54k-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: 1600px;
+    width: 1520px;
+    height: 700px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 110px;
+}
+
+.four{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+#five{
+ font-size: 150px;
+
+}
+
+.seven{
+    padding: 10px;
+    padding-left: 30px;
+    background-image: linear-gradient(
+        to right,
+        rgba(55, 50, 55, 0.671),
+        rgba(104, 99, 100, 0.692)
+      );
+}
+
+.six{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.eight{
+    border-top: 20px;
+    background-color: burlywood;
+}
+
+footer{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    background-color:  rgb(44, 5, 5);
+    color: white;
+    padding: 16px;
+}
+
+button{
+    background-color: rgb(44, 5, 5);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+#login{
+    color: white;
+}
+
+
+.para{
+    text-align: justify;
+}
+
+.cat{
+    text-decoration: none;
+    color: black;
+}
+
+.img1{
+    width: 280px;
+    height: 180px;
+}
+
+.img9{
+    width: 50px;
+}

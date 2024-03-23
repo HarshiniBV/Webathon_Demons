@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.bnav{
+    background-color: rgb(44, 5, 5);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+#one{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.four{
+    color: white;
+}
+
+nav input[type="text"] {
+    border: 1px solid #ccc;
+    float: right;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+footer{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    background-color:  rgb(44, 5, 5);
+    color: white;
+    padding: 16px;
+}
+
+
+
+.parent{
+    display: grid;
+    min-height:100vh;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-columns: 300px;
+    grid-template-rows:  300px;
+    padding: 15px;
+    background-color: lightgray;
+    
+}
+
+.child{
+    border-radius: 10px;
+    padding: 19px;
+}
+
+.child-1{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color:rgb(20, 88, 85);
+    color: white;
+}
+
+.child-2{
+    background-color:rgb(137, 124, 77);
+    grid-column: 3/4;
+    grid-row: 1/2;
+    color: white;
+    width: 400px;
+}
+
+.child-3{
+    background-color: rgb(202, 250, 248);
+    grid-column: 1/2;
+    grid-row: 2/3;
+    color: black;
+    height: 400px;
+}
+
+.child-4{
+    background-color: green;
+    grid-column: 2/5;
+    grid-row: 2/3;
+    color: white;
+    width: 860px;
+    height: 400px;
+}
+
+.child-5{
+    background-color: white;
+    grid-column: 4/5;
+    grid-row: 1/3;
+    color: black;
+    width: 300px;
+    height: 710px;
+}
+
+.anav{
+    display: flex;
+    justify-content: left;
+    padding: 15px;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+ul{
+    padding-left: 15px;
+    list-style-type: none;
+    gap: 5px;
+}
+
+.aone{
+    font-size: medium;
+    padding-bottom: 4px;
+}
+
+.atwo{
+    color:lightgray;
+    font-size: small;
+}
+
+.parag{
+    padding-top: 5px;
+    color:white;
+}
+
+.afour{
+    color: lightslategray;
+}
+
+
+.afive{
+    color: lightslategray;
+}
+
+.two{
+    background-image: url('./BLOG.jpg');
+    background-repeat: no-repeat;
+    background-size: 1600px;
+    width: 1520px;
+    height: 400px;
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 110px;
+}
+
+#five{
+    font-size: 100px;
+    color: black;
+   
+   }
+
+.seven{
+    padding: 10px;
+    padding-left: 30px;
+    
+}
+
+#pa{
+    color: black;
+}
+
+.six{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .story{
+        text-decoration: none;
+        color: white;
+  }
+
+  .thi{
+    color: black;
+    text-align: justify;
+  }
+
+  .so{
+    background-color:  burlywood;
+  }
+
+  textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    margin-bottom: 10px;
+}
+.sub {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.create{
+    color: blue;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create and Post</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+        background-image:url('./crete.jpg'); 
+        background-size: 100%;
+    }
+    .container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        resize: none;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+    .post {
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h2>Create a Post</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+
+        <label for="matter">Matter (Story, Poem, etc.):</label>
+        <textarea id="matter" name="matter" rows="6" placeholder="Write your matter here..."></textarea>
+
+        <button id="postBtn">Post</button>
+    </div>
+
+    <div class="container">
+        <h2>Output Post</h2>
+        <div class="post" id="outputPost">
+            
+        </div>
+    </div>
+
+    <script>
+        const postBtn = document.getElementById('postBtn');
+        const nameInput = document.getElementById('name');
+        const matterInput = document.getElementById('matter');
+        const outputPost = document.getElementById('outputPost');
+
+        postBtn.addEventListener('click', function() {
+            const name = nameInput.value.trim();
+            const matter = matterInput.value.trim();
+
+            if (name !== '' && matter !== '') {
+                createPost(name, matter);
+                nameInput.value = '';
+                matterInput.value = '';
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+
+        function createPost(name, matter) {
+            const postElement = document.createElement('div');
+            postElement.classList.add('post');
+            postElement.innerHTML = `
+                <h3>${name}</h3>
+                <p>${matter}</p>
+                <button onclick="editPost(this)">Edit</button>
+                <button onclick="deletePost(this)">Delete</button>
+            `;
+            outputPost.appendChild(postElement);
+        }
+
+        function editPost(button) {
+            const post = button.parentElement;
+            const name = post.querySelector('h3').textContent;
+            const matter = post.querySelector('p').textContent;
+
+            nameInput.value = name;
+            matterInput.value = matter;
+
+            // Remove the current post from output
+            post.remove();
+        }
+
+        function deletePost(button) {
+            const post = button.parentElement;
+            post.remove();
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      background-image:url("./login2.jpg");
+      background-size:cover;
+      background-position:top;
+    }
+    .container {
+      width: 300px;
+      margin: 200px auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      border: none;
+      border-radius: 3px;
+      color: #fff;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+    label {
+      font-weight:bold;
+    }
+    .required::after {
+      content:"*";
+      color:rgb(141,15,15);
+    }
+    .log{
+        text-decoration: none;
+        color:white;
+        background-color: blue;
+        padding: 5px;
+        border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form action="your_login_script.php" method="post">
+      <label for="username" class="required">Username:</label>
+      <input type="text" name="username" placeholder="Username" required>
+      <label for="Password" class="required">password:</label>
+      <input type="password" name="password" placeholder="Password" required>
+      <p>         <a href="./forgot.html">forgot password</a></p>
+      <p>If account not created yet ,<a href="./forgot.html">Sign up</a></p>
+   
+      <a class="log" href="./home.html" >
+      login
+      </a>
+    </form>
+  
+  </div>
+</body>
+</html>
